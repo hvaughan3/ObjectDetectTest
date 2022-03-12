@@ -12,12 +12,12 @@
       <div class="col-12">
         <ul class="nav nav-fill justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <a id="heartbeat-link" class="nav-link active" aria-current="page" href="#">
               Heartbeat
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a id="hand-link" class="nav-link" href="#">
               Hand Tracking
             </a>
           </li>
@@ -30,16 +30,21 @@
 
           <div id="heartbeat-content" class="invisible">
             <h1>Heartbeat Demo</h1>
+
+            <div>
+              <video hidden id="heart-webcam" width="640" height="480"></video>
+              <canvas id="heart-canvas" width="640" height="480"></canvas>
+            </div>
           </div>
 
           <div id="hand-content" class="invisible">
             <h1>Hand Tracking Demo</h1>
-          </div>
-        </div>
 
-        <div>
-          <video hidden id="webcam" width="640" height="480"></video>
-          <canvas id="canvas" width="640" height="480"></canvas>
+            <div>
+              <video hidden id="hand-webcam" width="640" height="480"></video>
+              <canvas id="hand-canvas" width="640" height="480"></canvas>
+            </div>
+          </div>
         </div>
       </div>
     </div>

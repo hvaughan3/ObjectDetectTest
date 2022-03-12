@@ -4,11 +4,11 @@ function isMobile () {
   return isAndroid || isiOS
 }
 
-tf.wasm.setWasmPaths({
-  'tfjs-backend-wasm.wasm': `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${tf.wasm.version_wasm}/dist/tfjs-backend-wasm.wasm`,
-  'tfjs-backend-wasm-simd.wasm': `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${tf.wasm.version_wasm}/dist/tfjs-backend-wasm-simd.wasm`,
-  'tfjs-backend-wasm-threaded-simd.wasm': `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${tf.wasm.version_wasm}/dist/tfjs-backend-wasm-threaded-simd.wasm`,
-})
+// tf.wasm.setWasmPaths({
+//   'tfjs-backend-wasm.wasm': `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${tf.wasm.version_wasm}/dist/tfjs-backend-wasm.wasm`,
+//   'tfjs-backend-wasm-simd.wasm': `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${tf.wasm.version_wasm}/dist/tfjs-backend-wasm-simd.wasm`,
+//   'tfjs-backend-wasm-threaded-simd.wasm': `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${tf.wasm.version_wasm}/dist/tfjs-backend-wasm-threaded-simd.wasm`,
+// })
 
 let videoWidth, videoHeight, rafID, ctx, canvas, ANCHOR_POINTS,
   scatterGLHasInitialized = false, scatterGL, fingerLookupIndices = {

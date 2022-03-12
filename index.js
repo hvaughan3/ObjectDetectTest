@@ -37,14 +37,14 @@ ready.then(function () {
   demo.init()
 })
 
-document.getElementById('heartbeat-link').addEventListener('click', function () {
+document.getElementById('heart-link').addEventListener('click', function () {
   displayedDiv.classList.add('invisible')
-  heartDiv.classList.remove('visible')
+  heartDiv.classList.remove('invisible')
   displayedDiv = heartDiv
 })
 
 document.getElementById('hand-link').addEventListener('click', function () {
   displayedDiv.classList.add('invisible')
-  handDiv.classList.remove('visible')
+  handDiv.classList.remove('invisible')
   displayedDiv = handDiv
 })

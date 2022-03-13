@@ -71,9 +71,19 @@
         <div id="content">
           <h1>Hand Tracking Demo</h1>
 
-          <div id="info"></div>
+          <div id="info">
+            <p>
+              2 machine learning models are used for this example: a palm detector (using single shot detection) and a hand-skeleton finger tracking model. It predicts 21 3D hand keypoints per detected hand.
+            </p>
 
-          <div id="predictions"></div>
+            <p>
+              The hand-skeleton finger tracker model was trained on 30K manually annotated real-world images of hands, each with 21 3D coordinates.
+            </p>
+
+            <a href="https://github.com/tensorflow/tfjs-models/tree/master/handpose" target="_blank">
+              https://github.com/tensorflow/tfjs-models/tree/master/handpose
+            </a>
+          </div>
 
           <div id="canvas-wrapper">
             <canvas id="output"></canvas>

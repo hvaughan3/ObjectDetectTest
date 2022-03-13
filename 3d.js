@@ -27,7 +27,7 @@ const objectron = new Objectron({
 })
 
 objectron.setOptions({
-  modelName: 'Chair',
+  modelName: 'shoe',
   maxNumObjects: 3,
 })
 
@@ -37,7 +37,7 @@ const camera = new Camera(videoElement, {
   onFrame: async () => {
     await objectron.send({ image: videoElement })
   },
-  width: 1280,
-  height: 720
+  width: 640,
+  height: 480
 })
 camera.start()

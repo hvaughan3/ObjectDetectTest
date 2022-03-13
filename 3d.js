@@ -27,7 +27,7 @@ const objectron = new Objectron({
 })
 
 objectron.setOptions({
-  modelName: 'shoe',
+  modelName: 'Shoe',
   maxNumObjects: 3,
 })
 

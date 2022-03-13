@@ -12,9 +12,9 @@ function onResults (results) {
       // const landmarks: mpObjectron.Point2D[] = detectedObject.keypoints.map(x => x.point2d)
       const landmarks = detectedObject.keypoints.map(x => x.point2d)
       // Draw bounding box.
-      drawingUtils.drawConnectors(canvasCtx, landmarks, window.BOX_CONNECTIONS, { color: '#FF0000' })
+      window.drawConnectors(canvasCtx, landmarks, window.BOX_CONNECTIONS, { color: '#FF0000' })
       // Draw centroid.
-      drawingUtils.drawLandmarks(canvasCtx, [landmarks[0]], { color: '#FFFFFF' })
+      window.drawLandmarks(canvasCtx, [landmarks[0]], { color: '#FFFFFF' })
     }
   }
   canvasCtx.restore()
